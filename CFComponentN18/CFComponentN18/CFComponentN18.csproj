@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A00DCF2E-C63B-4F8E-A1CF-3C3E6C98090E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CFComponentN18</RootNamespace>
+    <AssemblyName>CFComponentN18</AssemblyName>
+    <TargetFrameworkVersion>v4.7</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>CFsign.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SqlServerCe, Version=4.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft SQL Server Compact Edition\v4.0\Desktop\System.Data.SqlServerCe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Components\CFComponent\Classes\CCodiceFiscale.cs" />
+    <Compile Include="Components\CFComponent\CFComponent.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CFComponent\CFComponent.Designer.cs">
+      <DependentUpon>CFComponent.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CFComponent\Classes\CCodiceFiscaleSmartTags.cs" />
+    <Compile Include="Components\CFComponent\Classes\CFDataMembers.cs" />
+    <Compile Include="Components\CFComponent\Interfaces\ICFDataMembers.cs" />
+    <Compile Include="Components\CFComponent\Interfaces\ICodiceFiscale.cs" />
+    <Compile Include="Components\CognomeTextBox\CognomeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CognomeTextBox\CognomeTextBox.Designer.cs">
+      <DependentUpon>CognomeTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ComuniDropDownList\ComuniDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ComuniDropDownList\ComuniDropDownList.Designer.cs">
+      <DependentUpon>ComuniDropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\DataBase\CDataBase.cs" />
+    <Compile Include="Components\DataNascitaPicker\DataNascitaPicker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\DataNascitaPicker\DataNascitaPicker.Designer.cs">
+      <DependentUpon>DataNascitaPicker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\NomeTextBox\NomeTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\NomeTextBox\NomeTextBox.Designer.cs">
+      <DependentUpon>NomeTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\ProvinceDropDownList\ProvinceDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\ProvinceDropDownList\ProvinceDropDownList.Designer.cs">
+      <DependentUpon>ProvinceDropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\RegioniDropDownList\RegioniDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\RegioniDropDownList\RegioniDropDownList.Designer.cs">
+      <DependentUpon>RegioniDropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\SessoDropDownList\SessoDropDownList.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\SessoDropDownList\SessoDropDownList.Designer.cs">
+      <DependentUpon>SessoDropDownList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CFsign.pfx" />
+    <None Include="Components\ComuniDropDownList\clsdiagram.cd" />
+    <None Include="Components\ProvinceDropDownList\clsdiagram.cd" />
+    <None Include="Components\RegioniDropDownList\clsdiagram.cd" />
+    <None Include="Components\SessoDropDownList\clsdiagram.cd" />
+    <None Include="Components\ClassesDiagram\clsdiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Components\CognomeTextBox\CognomeTextBox.resx">
+      <DependentUpon>CognomeTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ComuniDropDownList\ComuniDropDownList.resx">
+      <DependentUpon>ComuniDropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\NomeTextBox\NomeTextBox.resx">
+      <DependentUpon>NomeTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\ProvinceDropDownList\ProvinceDropDownList.resx">
+      <DependentUpon>ProvinceDropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\RegioniDropDownList\RegioniDropDownList.resx">
+      <DependentUpon>RegioniDropDownList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Components\SessoDropDownList\SessoDropDownList.resx">
+      <DependentUpon>SessoDropDownList.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>SessoDropDownList1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

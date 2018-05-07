@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="CFComponentN18.CFComponent">
+    <Position X="6.75" Y="0.5" Width="4" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Delegate Name="CFComponentN18.CFComponent.AfterCalculatedEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\CFComponent\CFComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="CFComponentN18.CFComponent.AfterCalculatedEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\CFComponent\CFComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+      <Delegate Name="CFComponentN18.CFComponent.BeforeCalculateEventHandler" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\CFComponent\CFComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Delegate>
+      <Class Name="CFComponentN18.CFComponent.BeforeCalculateEventArgs" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Components\CFComponent\CFComponent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAAoAAABADEBAIEEAACAAAACggAAEAKIAAEABRMAACA=</HashCode>
+      <FileName>Components\CFComponent\CFComponent.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CFComponentN18.CFDataMembers">
+    <Position X="3.5" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAQAAAAAEAAAABACAAAQAAAAQAAAAAAECAAA=</HashCode>
+      <FileName>Components\CFComponent\Classes\CFDataMembers.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CFComponentN18.CCodiceFiscale">
+    <Position X="0.5" Y="2" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAIAIAAAAAAAAAAABAUQQCRAAAAAEIBAAAAA=</HashCode>
+      <FileName>Components\CFComponent\Classes\CCodiceFiscale.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="CFComponentN18.CCodiceFiscaleSmartTags">
+    <Position X="0.5" Y="7" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Components\CFComponent\Classes\CCodiceFiscaleSmartTags.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CFComponentN18.CFComponentActionList">
+    <Position X="2.75" Y="7" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAoAAACABEAQAAEIAAAAAAIAAAAAAAAAAAAAQIAAAA=</HashCode>
+      <FileName>Components\CFComponent\Classes\CCodiceFiscaleSmartTags.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="CFComponentN18.ICodiceFiscale">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Components\CFComponent\Interfaces\ICodiceFiscale.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="CFComponentN18.ICFDataMembers">
+    <Position X="3.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAEAAAABACAAAAAAAAQAAAAAAECAAA=</HashCode>
+      <FileName>Components\CFComponent\Interfaces\ICFDataMembers.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
